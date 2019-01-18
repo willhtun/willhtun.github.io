@@ -32,6 +32,7 @@ class Skills extends Component {
                         l2="Chinese"
                         l3="Burmese" />
         </div>
+        <br/>
       </div>
     );
   }

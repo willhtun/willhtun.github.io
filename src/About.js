@@ -22,7 +22,6 @@ class About extends Component {
         <p> In my free time, I like to watch movies, take photographs, create digital art and play videogames. </p>
         <br/>
         <p> I am currently seeking an internship opportunity for Summer 2019.</p>
-        <br/>
 
       </div>
     );

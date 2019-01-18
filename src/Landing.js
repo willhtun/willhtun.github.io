@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import Slide from 'react-reveal/Slide';
 import './index.css';
+import screenSize from 'screen-size';
+var scrollToElement = require('scroll-to-element');
 
 class Landing extends Component {
     constructor(props) {
         super(props);
         this.state = { width: 0, height: 0 };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+        this.scrollToProject = this.scrollToProject.bind(this);
     }
     componentDidMount() {
         this.updateWindowDimensions();
@@ -18,13 +21,16 @@ class Landing extends Component {
     updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
+    scrollToProject() {
+        scrollToElement(".Landing-Buttons-Area");
+    }
   render() {
     return (
       <div className="Landing">
-        <img src="https://i.imgur.com/kVUyNcx.jpg" style={{height: this.state.height}}></img>
+        <img src="https://i.imgur.com/kVUyNcx.jpg" style={{height: screenSize().y - 150}}></img>
         <div className="Landing-Info-Area">
             <div className="DiamondShape">
-             <img src="https://media.licdn.com/dms/image/C5603AQEZpAzHeLV4zw/profile-displayphoto-shrink_200_200/0?e=1553126400&v=beta&t=eqNs70G6_aYHYWrhm89lwpQ-utJEn0D7Kp4tYCaQumg"/>
+             <img src="https://i.imgur.com/WLqpZhh.jpg"/>
             </div>
             <h1> Wai Yan Htun | Will </h1>
             <div className="ExternalLogo-Wrapper">
@@ -45,7 +51,7 @@ class Landing extends Component {
                 <Slide up cascade>
                     <div>
                         <button className="Landing-Buttons"> >./ RESUME </button>
-                        <button className="Landing-Buttons"> >./ PROJECTS </button>
+                        <button className="Landing-Buttons" onClick={this.scrollToProject}> >./ PROJECTS </button>
                         <button className="Landing-Buttons"> >./ SKILLS </button>
                     </div>
                 </Slide>
