@@ -7,32 +7,19 @@ class Skills extends Component {
     return (
       <div className="Card">
         <h1> > SKILLS </h1>
-        <br/>
         <div className="SkillCard-Wrapper">
+            <SkillCard title="PROGRAMMING"
+                        lines="2"
+                        l1="JavaScript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; React.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C/C++ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C# .NET"
+                        l2="Java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PostgreSQL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lisp/Scheme" />
             <SkillCard title="ARTISTIC"
-                        l1="Photoshop"
-                        l2="Illustrator"
-                        l3="Unity"
-                        l4="Unreal Engine 4"
-                        l5="blender"
-                        l6="3ds Max" />
-            <SkillCard title="CODING"
-                        l1="C / C++" 
-                        l2="Node.js"
-                        l3="JavaScript"
-                        l4="Java"
-                        l5="Python"
-                        l6="C#"
-                        l7="MySQL / PostgreSQL"
-                        l8="Lisp / Scheme"
-                        l9="MySQL / PostgreSQL"
-                        l10="OCaml" />
+                        lines="1"
+                        l1="Photoshop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Illustrator &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UnityUnreal Engine 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3ds Max"/>
             <SkillCard title="LANGUAGES"
-                        l1="English"
-                        l2="Chinese"
-                        l3="Burmese" />
+                        lines="1"
+                        l1="English &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chinese &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Burmese" />
         </div>
-        <br/>
+        <div style={{height: 1}}></div>
       </div>
     );
   }
