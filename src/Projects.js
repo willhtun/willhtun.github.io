@@ -10,9 +10,14 @@ class Projects extends Component {
         <ProjectCard title="ONLINE SHOPPING PLATFORM"
                       desc="Online fashion shopping platform designed for college students, with college lifestyle
                             in mind. Currently working part-time as a front-end developer."
-                      cover="https://cdn.vox-cdn.com/thumbor/XDMf9wg6FqspBkvGI09m5c7isjY=/0x0:1920x1080/1200x800/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/58088785/jbareham_170921_2006_0051_16x9.0.jpg"
+                      cover="https://i.imgur.com/BE0kHTg.jpg"
                       link="/"
                       clickable="False"/>
+        <ProjectCard title="DIGISKETCH"
+                      desc="An android app that scans and digitizes pencil sketches."
+                      cover="https://i.imgur.com/TaIRxL7.jpg"
+                      link="https://play.google.com/store/apps/details?id=com.studio764.digisketch"
+                      clickable="True"/>
         <ProjectCard title="CLASSMEET"
                       desc="Social website that finds and connects fellow classmates, determined by similarity in
                             class schedule and major."
@@ -46,7 +51,7 @@ class Projects extends Component {
                       link="/"
                       cover="https://i.imgur.com/782VguE.png"
                       clickable="False"/>
-        <div style={{height: 670}}></div>
+        <div style={{height: 500}}></div>
       </div>
     );
   }

@@ -9,15 +9,10 @@ class About extends Component {
         <p> My name is Will Htun and I am from Los Angeles, California. I am a 4th year
             undergraduate student currently pursuing a degree in Computer Science at University of 
             California, Los Angeles. </p>
-        <p> I am a front-end web developer for a student startup at UCLA building an online shopping 
-            experience tailored for college students. I also develop Android apps, web apps, and  
-            Unity3D video games. </p>
-        <p> I have always had an immense interest in art and technology. My passion is to create
-            softwares and applications that allow me to combine my artistic creativity with my problem 
-            solving skills. I am interested in developing softwares and applications that
-            aim to bridge the gap even closer between humans and technology, while at the same time
-            ensuring ease of use, intuition, privacy and safety. </p>
-        <p> In my free time, I like to watch movies, take photographs, bake, draw digital art and play videogames. </p>
+        <p> I have always had an immense interest in art and technology. My passion is to combine these two skills to 
+            develop softwares and applications that bridge the gap even closer between humans and technology, while at the same time
+            ensuring ease of use, privacy and safety. </p>
+        <p> In my free time, I like to watch movies, take photographs, bake, draw and play videogames. </p>
         <p> I am currently seeking an entry level software engineer position.</p>
 
         <div className="ExternalLogo-Wrapper">

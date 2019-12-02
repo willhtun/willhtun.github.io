@@ -12,9 +12,13 @@ import Employment from './Employment';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.scrollToEmployment = this.scrollToEmployment.bind(this);
     this.scrollToProject = this.scrollToProject.bind(this);
     this.scrollToSkills = this.scrollToSkills.bind(this);
     this.goToResume = this.goToResume.bind(this);
+  }
+  scrollToEmployment() {
+    scrollToElement(".Employment", {offset: -50});
   }
   scrollToProject() {
     scrollToElement(".Projects", {offset: -50});
@@ -23,16 +27,16 @@ class App extends Component {
     scrollToElement(".Skills", {offset: -50});
   }
   goToResume() {
-    window.open('https://www.dropbox.com/s/hpe2b9e32fas33g/Will%20Htun%20Resume.pdf?dl=0', '_blank');
+    window.open('https://www.dropbox.com/s/imc67c671ip1u86/Will%20Htun%20Resume.pdf?dl=0', '_blank');
   }
   render() {
     return (
       <div className="App">
         <div className="Landing">
-        <img className="Background-Img" src="https://i.imgur.com/kVUyNcx.jpg" alt="Background" style={{height: screenSize().y - 150}}></img>
+        <div className="Background-Img" alt="Background" style={{height: screenSize().y - 150}}></div>
         <div className="Landing-Info-Area">
             <div className="DiamondShape">
-              <img src="https://i.imgur.com/WLqpZhh.jpg" alt="Profile"/>
+              <img src="https://i.imgur.com/VYQuD3x.jpg" alt="Profile"/>
             </div>
             <div className="Name">
               <h1> WAI YAN HTUN &nbsp; <span className="ColoredH1"> | &nbsp; WILL </span> </h1>   
@@ -44,23 +48,28 @@ class App extends Component {
                 <Slide up cascade>
                     <div>
                         <button className="Landing-Buttons" onClick={this.goToResume}> >./ RESUME </button>
-                        <button className="Landing-Buttons" onClick={this.scrollToProject}> >./ PROJECTS </button>
                         <button className="Landing-Buttons" onClick={this.scrollToSkills}> >./ SKILLS </button>
+                        <button className="Landing-Buttons" onClick={this.scrollToProject}> >./ PROJECTS </button>
+                        <button className="Landing-Buttons" onClick={this.scrollToEmployment}> >./ EXPERIENCE </button>
                     </div>
                 </Slide>
             </div>
         </div>
         </div>
         <About/>
-        <img className="Background-Img" src="https://i.imgur.com/A9BiGkx.png" alt="Background" style={{height: 100}}></img>
-        <div className="Skills">
-          <Skills/>
+        <div className="Background-Img" alt="Background" style={{height: 100}}></div>
+        <div className="Employment">
+          <Employment/>
         </div>
-        <img className="Background-Img" src="https://i.imgur.com/A9BiGkx.png" alt="Background" style={{height: 100}}></img>
+        <div className="Background-Img" alt="Background" style={{height: 100}}></div>
         <div className="Projects">
           <Projects/>
         </div>
-        <img className="Background-Img" src="https://i.imgur.com/A9BiGkx.png" alt="Background" style={{height: 150}}></img>
+        <div className="Background-Img" alt="Background" style={{height: 100}}></div>
+        <div className="Skills">
+          <Skills/>
+        </div>
+        <div className="Background-Img" alt="Background" style={{height: 100}}></div>
       </div>
     );
   }

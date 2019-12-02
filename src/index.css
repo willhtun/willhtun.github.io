@@ -44,7 +44,7 @@ p {
   height: 200px;
   position: absolute;
   margin: auto;
-  top: -200px;
+  top: -300px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -58,7 +58,7 @@ p {
 }
 
 .ColoredH1 {
-  color: rgb(56, 56, 56);
+  color: rgb(165, 209, 214);
 }
 
 .DiamondShape {
@@ -66,22 +66,30 @@ p {
   width: 200px;
   height: 200px;
   text-align: center;
-  transform:rotate(-45deg);
   margin: 0 auto;
   background-color: transparent;
   border-style: solid;
-  border-color: rgb(39, 39, 39);
-  border-width: 3px;
-  float: left;
+  border-color: rgb(240, 240, 240);
+  border-width: 5px;
+  border-radius: 200px;
+  overflow: hidden;
 }
 
 .Name {
-  margin-left: 300px;
+  margin-top: 50px;
+  margin-left: 200px;
+  color: rgb(240, 240, 240);
+}
+
+.Name h1 {
+  margin-bottom: 0px;
+  font-size: 35px;
 }
 
 .Background-Img {
-  min-width: 1500px;
-  position: relative;
+  background-image: url("https://i.imgur.com/rFwhEOD.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .Landing-Buttons-Area {
@@ -91,23 +99,25 @@ p {
 }
 
 .Landing-Buttons-Wrapper {
-  width: 720px;
+  width: 840px;
   margin: 0 auto;
 }
 
 .Landing-Buttons {
-  height: 100px;
-  width: 180px;
+  height: 75px;
+  width: 150px;
   margin: 0 30px;
   float: right;
   background-color: transparent;
   border-style: solid;
-  border-color: rgb(39, 39, 39);
+  border-color: rgb(255, 255, 255);
   border-width: 3px;
   cursor: pointer;
   font-family: 'Quicksand', sans-serif;
   font-size: 17px;
   font-weight: 700;
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
 }
 
 .Landing-Buttons:focus, input[type="button"]:focus {
@@ -115,8 +125,8 @@ p {
 }
 
 .Landing-Buttons:hover {
-  background-color: rgb(39, 39, 39);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .Landing-Buttons:active {
@@ -125,12 +135,12 @@ p {
 }
 
 .Subtitle h1 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 0px;
-  color: rgb(59, 55, 51);
+  color: rgb(150, 150, 150);
 }
 
 .ExternalLogo-Wrapper {
@@ -138,6 +148,7 @@ p {
   height: 40px;
   margin: 0 0;
   margin-top: 50px;
+  margin-left: 30px;
 }
 
 .ExternalLogo {
@@ -154,8 +165,13 @@ p {
 }
 
 .Card {
-  width: 1334px;
+  width: 1000px;
   margin: 50px auto;
+}
+
+.Card p {
+  margin-left: 30px;
+  margin-right: 200px;
 }
 
 .Employment {
@@ -169,10 +185,14 @@ p {
 }
 
 .ProjectCard {
-  width: 300px;
-  height: 300px;
-  margin: 16px;
+  width: 210px;
+  height: 210px;
+  margin: 20px;
   float: left;
+}
+
+.ProjectCard img {
+  width: 100%;
 }
 
 .ProjectCard-Wrapper {
@@ -219,7 +239,7 @@ p {
 }
 
 .SkillCard-Wrapper {
-  width: 900px;
+  width: 700px;
   margin: 0 auto;
 }
 
@@ -255,4 +275,40 @@ p {
   font-size: 16px;
   text-align: center;
   padding-bottom: 20px;
+}
+
+.EmploymentCard h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.EmploymentCard h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.EmploymentCard p {
+  list-style-type: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.EmploymentCard-imgWrapper {
+  height: 175px;
+  width: 25px;
+  float: left;
+  margin-right: 25px;
+  margin-left: 30px;
+}
+
+.EmploymentCard-imgWrapper-longer {
+  height: 240px;
+  width: 25px;
+  float: left;
+  margin-right: 25px;
+  margin-left: 30px;
 }
