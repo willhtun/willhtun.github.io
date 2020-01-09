@@ -6,14 +6,12 @@ class About extends Component {
     return (
       <div className="Card">
         <h1> > HELLO WORLD </h1>
-        <p> My name is Will Htun and I am from Los Angeles, California. I am a 4th year
-            undergraduate student currently pursuing a degree in Computer Science at University of 
-            California, Los Angeles. </p>
+        <p> My name is Will Htun and I am from Los Angeles, California. I studied Computer Science
+            at University of California Los Angeles, and currently working as a software engineer at SAP. </p>
         <p> I have always had an immense interest in art and technology. My passion is to combine these two skills to 
             develop softwares and applications that bridge the gap even closer between humans and technology, while at the same time
             ensuring ease of use, privacy and safety. </p>
         <p> In my free time, I like to watch movies, take photographs, bake, draw and play videogames. </p>
-        <p> I am currently seeking an entry level software engineer position.</p>
 
         <div className="ExternalLogo-Wrapper">
                 <div className="ExternalLogo">

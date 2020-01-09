@@ -48,9 +48,9 @@ class App extends Component {
                 <Slide up cascade>
                     <div>
                         <button className="Landing-Buttons" onClick={this.goToResume}> >./ RESUME </button>
-                        <button className="Landing-Buttons" onClick={this.scrollToSkills}> >./ SKILLS </button>
                         <button className="Landing-Buttons" onClick={this.scrollToProject}> >./ PROJECTS </button>
                         <button className="Landing-Buttons" onClick={this.scrollToEmployment}> >./ EXPERIENCE </button>
+                        <button className="Landing-Buttons" onClick={this.scrollToSkills}> >./ SKILLS </button>
                     </div>
                 </Slide>
             </div>
@@ -58,16 +58,16 @@ class App extends Component {
         </div>
         <About/>
         <div className="Background-Img" alt="Background" style={{height: 100}}></div>
+        <div className="Skills">
+          <Skills/>
+        </div>
+        <div className="Background-Img" alt="Background" style={{height: 100}}></div>
         <div className="Employment">
           <Employment/>
         </div>
         <div className="Background-Img" alt="Background" style={{height: 100}}></div>
         <div className="Projects">
           <Projects/>
-        </div>
-        <div className="Background-Img" alt="Background" style={{height: 100}}></div>
-        <div className="Skills">
-          <Skills/>
         </div>
         <div className="Background-Img" alt="Background" style={{height: 100}}></div>
       </div>

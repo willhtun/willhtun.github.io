@@ -13,7 +13,8 @@ class Employment extends Component {
                           company="Vitu"
                           date="June 2019 - August 2019"
                           desc1="Designed and coded a program to streamline internal processes by reducing roughly 30% of manual labor"
-                          desc2="Developed in C# .NET framework and Python using OpenCV, Google Tesseract OCR and PostgreSQL"/>
+                          desc2="Developed in C# .NET framework and Python using OpenCV, Google Tesseract OCR and PostgreSQL"
+                          position="top"/>
           <EmploymentCard title="Undergraduate Mentor"
                           company="UCLA Engineering School"
                           date="August 2018 - September 2018"
@@ -28,8 +29,7 @@ class Employment extends Component {
                           company="Best Western Plus Executive Inn"
                           date="August 2015 - December 2016"
                           desc1="Checked in/out guests, and handled reservations and payments"
-                          desc2="Accommodated guests' needs and requests throughout their stay"
-                          position="bottom"/>
+                          desc2="Accommodated guests' needs and requests throughout their stay" />
         </div>
       );
   }

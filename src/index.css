@@ -14,13 +14,20 @@ code {
 }
 
 h1 {
-  font-size: 35px;
+  padding-left: 15px;
+  font-size: 25px;
 }
 
 p {
- font-size: 18px;
+  font-size: 16px;
   font-family: 'Quicksand', sans-serif; 
-  line-height: 35px;
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 
 .ProjectCardImage:hover {
@@ -40,7 +47,6 @@ p {
 }
 
 .Landing-Info-Area {
-  width: 800px;
   height: 200px;
   position: absolute;
   margin: auto;
@@ -48,6 +54,19 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .Landing-Info-Area {
+    width: 800px;
+    height: 200px;
+    position: absolute;
+    margin: auto;
+    top: -300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .Landing-Info-Area h1 {
@@ -76,14 +95,28 @@ p {
 }
 
 .Name {
+  width: 230px;
+  margin: 0 auto;
   margin-top: 50px;
-  margin-left: 200px;
   color: rgb(240, 240, 240);
 }
 
 .Name h1 {
   margin-bottom: 0px;
-  font-size: 35px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .Name {
+    width: 420px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: rgb(240, 240, 240);
+  }
+  .Name h1 {
+    margin-bottom: 0px;
+    font-size: 35px;
+  }
 }
 
 .Background-Img {
@@ -93,14 +126,29 @@ p {
 }
 
 .Landing-Buttons-Area {
-  width: 100%;
-  position: absolute;
-  bottom: 50px;
+  width: 0px;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .Landing-Buttons-Area {
+    width: 100%;
+    visibility: visible;
+    position: absolute;
+    bottom: 50px;
+  }
 }
 
 .Landing-Buttons-Wrapper {
-  width: 840px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .Landing-Buttons-Wrapper {
+    width: 840px;
+    margin: 0 auto;
+  }
 }
 
 .Landing-Buttons {
@@ -165,13 +213,24 @@ p {
 }
 
 .Card {
-  width: 1000px;
+  width: 100%;
   margin: 50px auto;
 }
 
 .Card p {
   margin-left: 30px;
-  margin-right: 200px;
+  margin-right: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .Card {
+    width: 1000px;
+    margin: 50px auto;
+  }
+  .Card p {
+    margin-left: 30px;
+    margin-right: 200px;
+  }
 }
 
 .Employment {
@@ -239,29 +298,31 @@ p {
 }
 
 .SkillCard-Wrapper {
-  width: 700px;
+  width: 90%;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .SkillCard-Wrapper {
+    width: 975px;
+    margin: 0 auto;
+  }
 }
 
 .SkillCard {
   width: 100%;
-  box-shadow: 0px 0px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
   border-radius: 5px;
 }
 
-.SkillCard:hover {
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
-}
 
 .SkillCard h1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   margin: 0;
+  color: rgb(86, 137, 166);
 }
 
 .SkillCard ul {
@@ -273,8 +334,12 @@ p {
   list-style-type: none;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
-  text-align: center;
-  padding-bottom: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.EmploymentCard {
+  padding-left: 30px;
 }
 
 .EmploymentCard h1 {
@@ -299,16 +364,38 @@ p {
 
 .EmploymentCard-imgWrapper {
   height: 175px;
-  width: 25px;
+  width: 0px;
   float: left;
-  margin-right: 25px;
-  margin-left: 30px;
+  margin: 0px;
+  visibility: hidden;
 }
 
 .EmploymentCard-imgWrapper-longer {
-  height: 240px;
-  width: 25px;
+  height: 175px;
+  width: 0px;
   float: left;
-  margin-right: 25px;
-  margin-left: 30px;
+  margin: 0px;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .EmploymentCard {
+    padding-left: 0px;
+  }
+  .EmploymentCard-imgWrapper {
+    height: 175px;
+    width: 25px;
+    float: left;
+    margin-right: 25px;
+    margin-left: 30px;
+    visibility: visible;
+  }
+  .EmploymentCard-imgWrapper-longer {
+    height: 175px;
+    width: 25px;
+    float: left;
+    margin-right: 25px;
+    margin-left: 30px;
+    visibility: visible;
+  }
 }

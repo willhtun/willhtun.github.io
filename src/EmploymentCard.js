@@ -3,11 +3,11 @@ import './index.css';
 
 class EmploymentCard extends Component {
   render() {
-    if (this.props.position == "bottom") {
+    if (this.props.position == "top") {
       return (
         <div className="EmploymentCard">
           <div className="EmploymentCard-imgWrapper-longer">
-            <img src="https://i.imgur.com/FZElSB3.png"></img>
+            <img src="https://i.imgur.com/xgR7ISr.png"></img>
           </div>
           <div>
             <h1>{this.props.title} | <span style={{color: "#5689a6"}}> {this.props.company} </span> </h1>
@@ -23,7 +23,7 @@ class EmploymentCard extends Component {
       return (
         <div className="EmploymentCard">
           <div className="EmploymentCard-imgWrapper">
-            <img src="https://i.imgur.com/YPKHhpv.png"></img>
+            <img src="https://i.imgur.com/IrwhGvh.png"></img>
           </div>
           <div>
             <h1>{this.props.title} | <span style={{color: "#5689a6"}}> {this.props.company} </span> </h1>
