@@ -122,6 +122,7 @@ p {
 .Background-Img {
   background-image: url("https://i.imgur.com/rFwhEOD.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
