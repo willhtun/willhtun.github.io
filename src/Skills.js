@@ -10,8 +10,9 @@ class Skills extends Component {
         <br></br>
         <div className="SkillCard-Wrapper">
             <SkillCard title="PROGRAMMING"
-                        lines="1"
-                        l1="JavaScript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C# .NET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C/C++ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lisp/Scheme &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; React.js" />
+                        lines="2"
+                        l1="Java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Javascript &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C# .NET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C/C++ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go"
+                        l2="SpringBoot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Docker &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kubernetes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kafka &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Temporal.io &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Akka Streams &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dynatrace &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AWS/Azure/GCP" />
             <hr></hr>
             <SkillCard title="ARTISTIC"
                         lines="1"

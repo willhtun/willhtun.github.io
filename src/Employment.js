@@ -9,27 +9,32 @@ class Employment extends Component {
         <div className="Card">
           <h1> > WORK EXPERIENCE </h1>
           <br/>
+          <EmploymentCard title="Software Engineer"
+                          company="SAP - Ariba Business Networks"
+                          date="July 2020 - Present"
+                          desc1="Building a distributed transactional workflow framework that enables applications to route up to 2.5M documents per hour"
+                          desc2="Designed a long running workflow management framework for data migration across regions and platforms where each job can exceed 100GBs of data transfer"
+                          position="top"/>
+          <EmploymentCard title="Software Engineer"
+                          company="SAP - S/4HANA Asset & Service Management"
+                          date="July 2020 - Present"
+                          desc1="Implemented a business rules engine that processes hundreds of messages per second using streaming and event driven architecture"
+                          desc2="Implemented near real-time master data and timeseries data ingestion layer using message broker architecture for business intelligence"/>
+          <EmploymentCard title="Software Engineer"
+                          company="SAP - Ariba Cloud Platform Engineering"
+                          date="January 2020 - July 2020"
+                          desc1="Implemented health monitors for cloud deployment services using tools such as Datadog"
+                          desc2="Configured and built pipelines using infrastructure as code tools such as Terraform and Ansible"/>
           <EmploymentCard title="Software Developer Intern"
                           company="Vitu"
                           date="June 2019 - August 2019"
-                          desc1="Designed and coded a program to streamline internal processes by reducing roughly 30% of manual labor"
-                          desc2="Developed in C# .NET framework and Python using OpenCV, Google Tesseract OCR and PostgreSQL"
-                          position="top"/>
+                          desc1="Designed a computer vision assisted program to streamline internal document flow by reducing roughly 30% of manual processing "
+                          desc2="Developed in C# .NET framework and Python using OpenCV, Google Tesseract OCR and PostgreSQL"/>
           <EmploymentCard title="Undergraduate Mentor"
                           company="UCLA Engineering School"
                           date="August 2018 - September 2018"
-                          desc1="Lead two engineering technical projects (C++ games) for incoming engineering transfer students"
-                          desc2="Co-lectured half the course of C++ and Data Structures alongside a Teaching Assistant"/>
-          <EmploymentCard title="Student Mentor"
-                          company="Mt San Antonio TRiO Upward Bound"
-                          date="October 2016 - June 2017"
-                          desc1="Tutored and mentored high school students on Math, Physics, and English"
-                          desc2="Organized and planned workshops, activities, and meetings to enrich students"/>
-          <EmploymentCard title="Front Desk Receptionist"
-                          company="Best Western Plus Executive Inn"
-                          date="August 2015 - December 2016"
-                          desc1="Checked in/out guests, and handled reservations and payments"
-                          desc2="Accommodated guests' needs and requests throughout their stay" />
+                          desc1="Lead two technical projects (C++ games) for incoming engineering students"
+                          desc2="Lectured a course of C++ and Data Structures, including presentations and creating assignments"/>
         </div>
       );
   }
